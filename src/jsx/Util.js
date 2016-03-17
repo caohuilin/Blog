@@ -17,7 +17,7 @@ function changeHeight(value){
 }
 function changeMarginTop(value){
     if(value){
-        return{marginTop :'60px'}
+        return{marginTop :'256px'}
     }else{
         return{marginTop :'256px'}
     }
