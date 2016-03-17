@@ -118,9 +118,9 @@ AUTOMAKE_OPTIONS=foreign
 bin_PROGRAMS=first
 first_SOURCES=first.c
 \`\`\`
-#### 4.运行命令achlocal ####
+#### 4.运行命令aclocal ####
   \`\`\`
-# achlocal
+# aclocal
 \`\`\`
 成功之后，会在目录下产生 aclocal.m4 和 autom4te.cache 两个文件。
 #### 5.运行命令autoheader ####
