@@ -31,7 +31,7 @@ const Main = React.createClass({
         }
     },
     onScrollDown(){
-        let scrollTop = document.body.scrollTop;
+        let scrollTop = document.scrollingElement.scrollTop;
         if(scrollTop == 0){
             this.setState({wheel: false});
         }else{
