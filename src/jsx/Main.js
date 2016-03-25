@@ -40,7 +40,7 @@ const Main = React.createClass({
     },
     render(){
         return (
-          <div onWheel={this.onWheelDown} onScroll={()=>console.log('scroll')}>
+          <div className="mainBody" onWheel={this.onWheelDown} onScroll={()=>console.log('scroll')}>
                <Header wheel={this.state.wheel}/>
               <Content wheel={this.state.wheel} params={this.props.params}/>
               <Footer />

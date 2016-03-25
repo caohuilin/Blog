@@ -1,12 +1,12 @@
 const Header = React.createClass({
     render(){
         return (
-          <header className='header' style={changeHeight(this.props.wheel)}>
-              <div className="logoSmall" style={css_display(this.props.wheel)}><Link to="/tag/ALL">CaoHuilin</Link></div>
-              <div className="logo" style={css_display(!this.props.wheel)}><Link to="/tag/ALL">=CHL</Link></div>
-              <span style={css_display(!this.props.wheel)}>Pursue beauty , Approach beauty , Achieve beauty</span>
-              <div className="blank"></div>
-              <nav>
+          <header className='header' style={change_height(this.props.wheel)}>
+
+              <div className="head1" >
+                  <div className="logoSmall" style={css_display(this.props.wheel)}><Link to="/tag/ALL">CaoHuilin</Link>
+                  </div>
+                  <div className="blank"></div>
                   <ul>
                       <li>
                           <a href="https://hi-hi.cn/chlblog/" target="_blank">Home</a>
@@ -18,7 +18,11 @@ const Header = React.createClass({
                           <a href="https://github.com/caohuilin" target="_blank">Project</a>
                       </li>
                   </ul>
-              </nav>
+              </div>
+              <div className="head2" style={css_display(!this.props.wheel)}>
+                  <div className="logo" ><Link to="/tag/ALL">=CHL</Link></div>
+                  <div className="proverb">Pursue beauty , Approach beauty , Achieve beauty</div>
+              </div>
           </header>
         )
     }

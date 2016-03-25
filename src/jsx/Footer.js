@@ -3,7 +3,9 @@ const Footer = React.createClass({
         return (
           <footer id="footer">
               <div className="con">
-                  <ul className="nav">
+                  <ul>
+                  </ul>
+                  <ul className="menu">
                       <li>
                           <a href="https://hi-hi.cn/chlblog/" target="_blank">Home</a>
                       </li>

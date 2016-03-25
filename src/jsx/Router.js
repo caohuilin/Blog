@@ -6,4 +6,4 @@ ReactDOM.render((
       </Route>
       <Route path="*" component={Main}/>
   </Router>
-), document.getElementById('main'));
+), document.getElementById('mainBody'));
