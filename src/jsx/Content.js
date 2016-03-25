@@ -6,7 +6,7 @@ const Content = React.createClass({
         return (
           <div className="main">
               <div className="content" >
-                  <LeftArea />
+                  <LeftArea wheel={this.props.wheel}/>
                   <RightArea tag={this.props.params.tag} article={this.props.params.article}/>
               </div>
           </div>

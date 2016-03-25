@@ -1,5 +1,4 @@
 
-console.log("start")
 const ARTICLE = [
     {
         id:1,
@@ -16,5 +15,13 @@ const ARTICLE = [
         date:"2016-02-21",
         description:"JQuery实现的一个简单的日报系统",
         content:Article2
+    },
+    {
+        id:3,
+        title: " 随笔  ----前端路的酸甜苦辣",
+        tag:"随笔",
+        date:"2016-03-25",
+        description:"",
+        content:Article3
     }
 ];

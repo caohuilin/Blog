@@ -15,7 +15,7 @@
 .reset();
 
 body {
-  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+  font: 500 1em/1.8 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
   background: url(../img/tiny_grid.png) repeat top left;
 }
 
@@ -32,6 +32,7 @@ body {
       display: flex;
       flex-direction: column;
       transition: all 0.2s ease-in-out;
+      overflow: hidden;
       .blank {
         flex: 1;
       }
@@ -58,6 +59,7 @@ body {
           display: flex;
           flex-direction: row;
           align-content: center;
+          font-size: 14px;
           li {
             padding: 0.4em 2.2em;
             border-left: 2px solid #F3FAFB;
@@ -133,7 +135,9 @@ body {
         .leftArea {
           width: 200px;
           .classify {
-            width:150px;
+            width:150px;font-size: 14px;
+            position: fixed;
+            transition: all 0.2s ease-in-out;
             h2{
               color: hsla(190, 82%, 51%, 1);
               text-shadow: 2px 2px #EFEFEF;
@@ -194,7 +198,7 @@ body {
                 margin: 0 30px 0 30px;
                 padding: 30px 0 20px;
                 .title {
-                  font-size: 1.8em;
+                  font-size: 2.8em;
                   font-weight: 900;
                   a{
                     color: hsla(190, 82%, 51%, 1);
@@ -215,6 +219,7 @@ body {
                   line-height: 1.7em;
                   font-size: 1.35em;
                   margin: 0 0 20px 0;
+
                 }
                 .more {
                   line-height: 1.7em;
@@ -232,20 +237,21 @@ body {
             }
           }
           .article{
+            max-width: 960px;
+            margin:43px auto;
             ul, ol, dir{
               list-style-type: disc;
             }
             li {
               list-style: disc;
             }
-            margin:43px 0 50px 50px;
             box-shadow: 5px 10px 10px #ddd;
             background: #F3FAFB;
             .inside {
               margin: 0 30px 0 30px;
-              padding: 30px 0 20px;
+              padding:5% 10%;
               .title {
-                font-size: 1.8em;
+                font-size: 3.1em;
                 font-weight: 900;
                 color: hsla(190, 82%, 51%, 1);
                 text-shadow: 1px 1px #EFEFEF, 2px 2px #CCC;
@@ -263,6 +269,9 @@ body {
                 font-size: 16px;
                 line-height: 1.7em;
                 margin: 0 0 20px 0;
+                p{
+                  margin:0 0 50px;
+                }
               }
               .more {
                 line-height: 1.7em;

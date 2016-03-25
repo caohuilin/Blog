@@ -14,3 +14,10 @@ function change_height(value) {
         return { height: "200px",boxShadow:"none"};
     }
 }
+function position_top(value){
+    if (value) {
+        return {top: '100px'};
+    } else {
+        return {top: '250px'};
+    }
+}

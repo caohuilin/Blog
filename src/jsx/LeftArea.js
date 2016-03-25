@@ -2,7 +2,7 @@ const LeftArea = React.createClass({
     render(){
         return (
           <div className="leftArea">
-              <div className="classify">
+              <div className="classify" style={position_top(this.props.wheel)}>
                   <div className="head"><h2>文章分类</h2></div>
                   <nav>
                       <ul>
