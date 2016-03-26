@@ -21,7 +21,15 @@ const ARTICLE = [
         title: " 随笔  ----前端路的酸甜苦辣",
         tag:"随笔",
         date:"2016-03-25",
-        description:"",
+        description:"学习中的一点小感受和大家一起分享",
         content:Article3
+    },
+    {
+        id:4,
+        title: "让人欢喜让人忧的CSS居中问题",
+        tag:"HTML&CSS",
+        date:"2016-03-26",
+        description:"CSS布局中的居中问题",
+        content:Article4
     }
 ];
