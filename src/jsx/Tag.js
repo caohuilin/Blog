@@ -1,11 +1,21 @@
 const Tag = React.createClass({
+    componentWillMount(){
+        if(document.body.scrollTop !== 0){
+            document.body.scrollTop=170;
+        }
+    },
+    componentWillReceiveProps(nextProps){
+        if( this.props.tag !== nextProps.tag && document.body.scrollTop !== 0){
+            document.body.scrollTop=170;
+        }
+    },
    render(){
        const articleList = ARTICLE;
        const tag = this.props.tag;
        let TagHTML = articleList.filter(v=> {
            if (tag === 'ALL') return true;
            return v.tag == tag
-       }).map((article)=> {
+       }).reverse().map((article)=> {
            return (<li key={article.id}>
                <div className="inside">
                    <h2 className="title"><Link to={"/article/" + article.id}>{article.title}</Link></h2>
