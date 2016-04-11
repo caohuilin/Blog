@@ -31,5 +31,13 @@ const ARTICLE = [
         date:"2016-03-26",
         description:"CSS布局中的居中问题",
         content:Article4
+    },
+    {
+        id:5,
+        title: "对React的一些理解",
+        tag:"React",
+        date:"2016-04-11",
+        description:"学习过程中对React的一些理解",
+        content:Article5
     }
 ];
