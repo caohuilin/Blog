@@ -39,5 +39,13 @@ const ARTICLE = [
         date:"2016-04-11",
         description:"学习过程中对React的一些理解",
         content:Article5
+    },
+    {
+        id:6,
+        title:"搞怪的JavaScript数据类型",
+        tag:"JavaScript",
+        date:"2016-04-18",
+        description:"js中数据类型方面应该注意的一些问题",
+        content:Article6
     }
 ];
