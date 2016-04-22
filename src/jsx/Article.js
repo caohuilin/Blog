@@ -47,5 +47,13 @@ const ARTICLE = [
         date:"2016-04-18",
         description:"js中数据类型方面应该注意的一些问题",
         content:Article6
+    },
+    {
+        id:7,
+        title:"谈谈阿里的前端笔试题",
+        tag:"其他",
+        date:"2016-04-21",
+        description:"2016年阿里实习生招聘笔试题",
+        content:Article7
     }
 ];
